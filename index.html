@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo">Minha calculadora</h1>
+
+      <br />
+
+      <div>
+        <label for="num1">Digite o primeiro número:</label>
+        <input type="text" name="numero1" id="num1" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="num2">Digite o segundo número:</label>
+        <input type="text" name="numero2" id="num2" />
+      </div>
+
+      <br />
+
+      <label for="operacoes">Selecione a operação matemática</label>
+      <select name="operacoes" id="operacoes">
+        <option value="+">Somar</option>
+        <option value="-">Subtrair</option>
+        <option value="*">Multiplicar</option>
+        <option value="/">Dividir</option>
+      </select>
+
+      <button id="btnCalcular" onClick="trocarTituloDaCalculadora()">
+        Calcular
+      </button>
+
+      <br />
+      <br />
+
+      <div id="resultado">Resultado: 22</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
