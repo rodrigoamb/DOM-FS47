@@ -10,4 +10,4 @@ console.log(operacao);
 console.log(btnCalcular);
 console.log(resultado);
 
-resultado.textContent = "Até a próxima quinta meus lindos!";
+function calcular() {}
