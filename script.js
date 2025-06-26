@@ -4,10 +4,24 @@ const operacao = document.querySelector("#operacoes");
 const btnCalcular = document.querySelector("#btnCalcular");
 const resultado = document.querySelector("#resultado");
 
-console.log(inputNum1);
-console.log(inputNum2);
-console.log(operacao);
-console.log(btnCalcular);
-console.log(resultado);
+function calcular() {
+  let resultadoDaOperacao;
 
-function calcular() {}
+  if (operacao.value === "+") {
+    resultadoDaOperacao = Number(inputNum1.value) + Number(inputNum2.value);
+  }
+
+  if (operacao.value === "-") {
+    resultadoDaOperacao = Number(inputNum1.value) - Number(inputNum2.value);
+  }
+
+  if (operacao.value === "*") {
+    resultadoDaOperacao = Number(inputNum1.value) * Number(inputNum2.value);
+  }
+
+  if (operacao.value === "/") {
+    resultadoDaOperacao = Number(inputNum1.value) / Number(inputNum2.value);
+  }
+
+  resultado.textContent = `O resultado é: ${resultadoDaOperacao}`;
+}
