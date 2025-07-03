@@ -5,8 +5,6 @@ const inputNum4 = document.querySelector("#num4");
 const resultado = document.querySelector("#resultado");
 
 function calcular(operacao) {
-  console.log(operacao);
-
   if (!inputNum1.value || !inputNum2.value) {
     resultado.textContent =
       "O primeiro e o segundo campo devem ser preenchidos";
